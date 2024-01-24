@@ -19,3 +19,5 @@ with col3:
 
 df=pd.read_csv("./data/iris.csv")  
 st.write(df.head(10))  
+ 
+st.button("เเสดงข้อมูลตัวอย่าง")
