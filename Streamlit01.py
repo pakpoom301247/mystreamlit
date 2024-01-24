@@ -21,7 +21,7 @@ df=pd.read_csv("./data/iris.csv")
  
 if(st.button("เเสดงข้อมูลตัวอย่าง")):
     st.write(df.head(10)) 
-    st.buttom("ไม่เเสดงข้อมูลตัวอย่าง")
+    st.button("ไม่เเสดงข้อมูลตัวอย่าง")
 else :
-    st.buttom("ไม่เเสดงข้อมูลตัวอย่าง")    
+    st.button("ไม่เเสดงข้อมูลตัวอย่าง")    
 
