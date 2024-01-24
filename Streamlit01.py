@@ -43,8 +43,7 @@ import matplotlib.pyplot as plt
 
 if(st.button("เเสดงกราฟวงกลม")):
     chart_data = pd.DataFrame(
-    {
-    labels='sepal.width', 'sepal.length', 'petal.width', 'petal.length'
+    {labels = 'sepal.width', 'sepal.length', 'petal.width', 'petal.length'
     x1=df['sepal.width'].mean()
     x2=df['sepal.length'].mean()
     x3=df['petal.width'].mean() 
