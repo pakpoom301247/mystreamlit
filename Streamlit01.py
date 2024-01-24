@@ -55,6 +55,6 @@ if(st.button("เเสดงกราฟวงกลม")):
         shadow=True, startangle=90)
    
 st.pyplot(fig1)    
-    st.button("ไม่เเสดงกราฟวงกลม")
+    
 else:
     st.button("ไม่เเสดงกราฟวงกลม")    
