@@ -17,7 +17,11 @@ with col3:
     st.header("Setosa")
     st.image("./image/setosa.jpg")
 
-df=pd.read_csv("./data/iris.csv")  
-st.write(df.head(10))  
+df=pd.read_csv("./data/iris.csv")    
  
-st.button("เเสดงข้อมูลตัวอย่าง")
+if(st.button("เเสดงข้อมูลตัวอย่าง")):
+    st.write(df.head(10)) 
+    st.buttom("ไม่เเสดงข้อมูลตัวอย่าง")
+else :
+    st.buttom("ไม่เเสดงข้อมูลตัวอย่าง")    
+
