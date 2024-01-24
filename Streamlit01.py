@@ -19,9 +19,23 @@ with col3:
 
 df=pd.read_csv("./data/iris.csv")    
  
+ 
 if(st.button("เเสดงข้อมูลตัวอย่าง")):
     st.write(df.head(10)) 
     st.button("ไม่เเสดงข้อมูลตัวอย่าง")
 else :
     st.button("ไม่เเสดงข้อมูลตัวอย่าง")    
+
+if(st.button("แสดงกราฟแท่ง")):
+    chart_data = pd.DataFrame(
+    {
+        "ประเภทดอกไม้": df['variety'],
+        "ความกว้าง": df['sepal.width'],
+        "ความยาว": df['sepal.length']    
+        }
+    )
+    st.bar_chart(chart_data, x="ประเภทดอกไม้", y=["ความกว้าง","ความยาว"], color=["#FF0000", "#0000FF"])
+    st.button("ไม่แสดงกราฟเเท่ง")
+else:
+    st.button("ไม่แสดงกราฟเเท่ง")    
 
