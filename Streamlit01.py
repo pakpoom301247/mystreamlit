@@ -8,8 +8,6 @@ st.header("การนำเสนอข้อมูลกราฟด้วย
 col1, col2, col3 = st.columns(3)
 
 with col1:
-
 with col2:
-
 with col3:
 
