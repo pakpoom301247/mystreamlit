@@ -55,8 +55,8 @@ if(st.button("เเสดงกราฟวงกลม")):
         ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
     st.pyplot(fig1)    
-)
-}
+    }
+)    
     st.button("ไม่เเสดงกราฟวงกลม")
 else:
     st.button("ไม่เเสดงกราฟวงกลม")    
