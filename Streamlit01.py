@@ -16,3 +16,6 @@ with col2:
 with col3:
     st.header("Setosa")
     st.image("./image/setosa.jpg")
+
+df=pd.read_csv("./data/iris.csv")  
+st.write(df.head(10))  
