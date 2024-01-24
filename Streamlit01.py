@@ -42,7 +42,8 @@ else:
 import matplotlib.pyplot as plt
 
 if(st.button("เเสดงกราฟวงกลม")):
-      
+    chart_data = pd.DataFrame(
+    {
      labels = 'sepal.width', 'sepal.length', 'petal.width', 'petal.length'
      x1=df['sepal.width'].mean()
      x2=df['sepal.length'].mean()
@@ -53,8 +54,9 @@ if(st.button("เเสดงกราฟวงกลม")):
      fig1, ax1 = plt.subplots()
      ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
-   
-st.pyplot(fig1)    
-    
+   st.pyplot(fig1)    
+    )
+    }
+    st.button("ไม่เเสดงกราฟวงกลม")
 else:
     st.button("ไม่เเสดงกราฟวงกลม")    
